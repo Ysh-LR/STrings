@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('2077.jpg');
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.title {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.panel {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.panel .btn-container {
+    display: inline-block;
+}
+
+.panel .btn-container input {
+    border: 0;
+    outline: 0;
+    height: 60px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: rgb(104, 101, 101);
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+    vertical-align: middle;
+    transition: .2s;
+}
+
+.panel .btn-container .btn {
+    display: inline-block;
+    height: 60px;
+    background-image: linear-gradient(to bottom right, yellow, lightblue);
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 20px;
+    color: #585454;
+    font-weight: bold;
+    width: 170px;
+    border-radius: 30px;
+    margin-left: -170px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.panel .btn-container:hover input {
+    width: 400px;
+    animation: inputAction .4s ease-out;
+}
+
+.panel .btn-container:hover .btn {
+    width: 100px;
+    height: 60px;
+    margin-left: -100px;
+    animation: btnAction .4s ease-out;
+}
+
+@keyframes inputAction {
+    0% {
+        width: 400px;
+    }
+    60% {
+        width: 450px;
+    }
+    100% {
+        width: 400px;
+    }
+}
+
+@keyframes btnAction {
+    0% {
+        width: 100px;
+        height: 60px;
+        margin-left: -100px;
+    }
+    60% {
+        width: 100px;
+        height: 60px;
+        margin-left: 10px;
+    }
+    100% {
+        width: 100px;
+        height: 60px;
+        margin-left: -100px;
+    }
+}
+
+ ::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 10px;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
